@@ -1,0 +1,52 @@
+Hello, 
+
+sorry if i write in english, but due to reading all the technical implementations and documentations in english all the time,
+the way for me to describe a system is currently in english. 
+My mother tonge is german. If wished i can also translate everything into german.
+
+
+
+About my server:
+
+I commented alot in the java files, so that should be probably be better to use to actually see what i did.
+
+It was also really hard to find a tutorial at all without it having the httpServer class already implemented.
+I started from the ground, without any experience in server programming and also having some really rustic skills with java. 
+It has been a long time (about 3 years) since i last programmed with java so that was also interesting to come back to.
+
+As for the implementation, i struggled a lot. But i managed to gather a lot of information for myself and learned a lot.
+
+But now back to the actual implementation and what i did:
+
+------------ Description ------------
+Create a main function that parses the arguments to the program.
+In the main function we create a new server.
+
+The server implements the input/output streams and calls the parse function
+Inside the parse function, we take the input and parse it to its members and key:value pairs.
+From that we can extract the path to the filesystem.
+
+Then we check if the path to the file system is a directory or a file.
+If it is a directory, we write every name into a new string and a new line.
+If it is a file, we read the file into a datainputstream and write that information into a dataoutputstream that goes back to the client.
+
+------------------------------------
+
+-----------Design consideration ---------------
+
+See the added java file with annotations to get the design considerations.
+Inside the program it is easier to read and understand as to why i did it the way i did it.
+
+-----------------------------------------------
+
+Nohing spectacular, but it was alot of work for me, mainly because i got the flu inbetween working on this project and could not wrap my head around some really easy stuff for a long time.
+I also did not want to implement anything within the HTTPServer class which would be the easy route, but i would still know not that much in comparison to now. 
+
+Everything i did is my own work. I only had help from tutorials on how to actually create a socket+multithreading because i did not know where i should start.  
+I am not anywhere i wish i would be, but now i know where i lack bigtime as a programmer. 
+I am actually not proud at all on what i send you guys. I know where the programm still lacks functionality.
+I could only do that much in the timeframe with being down with the flu.
+
+Best wishes
+Fabian Grotz 
+
